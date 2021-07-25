@@ -29,9 +29,9 @@ class LoginController extends Controller
             return ['token' => $token->plainTextToken];
         }
 
-        return [
+        return response([
             'username' => 'The provided credentials do not match our records.',
-        ];
+        ], 401);
     }
 
     public function signout(Request $request) {
