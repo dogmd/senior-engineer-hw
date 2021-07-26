@@ -32,7 +32,7 @@ vendor/bin/sail artisan tinker
 curl --location --request POST '127.0.0.1/api/signin' \
 --header 'Content-Type: application/json' \
 --data-raw '{
-    "username": "user2",
+    "username": "user1",
     "password": "123"
 }'
 ```
